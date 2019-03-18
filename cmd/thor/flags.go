@@ -86,7 +86,7 @@ var (
 	}
 	gasLimitFlag = cli.IntFlag{
 		Name:  "gas-limit",
-		Value: 500000000,
+		Value: 100000000,
 		Usage: "block gas limit",
 	}
 	importMasterKeyFlag = cli.BoolFlag{
