@@ -46,7 +46,7 @@ func NewCustomNet(gen *CustomGenesis) (*Genesis, error) {
 
 	builder := new(Builder).
 		Timestamp(launchTime).
-		GasLimit(gen.GasLimit).
+		GasLimit(thor.InitialGasLimit).
 		State(func(state *state.State) error {
 			// alloc precompiled contracts
 			for addr := range vm.PrecompiledContractsByzantium {
