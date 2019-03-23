@@ -20,7 +20,7 @@ const (
 	ClauseGas                 uint64 = params.TxGas - TxGas
 	ClauseGasContractCreation uint64 = params.TxGasContractCreation - TxGas
 
-	MinGasLimit          uint64 = 1000 * 1000
+	MinGasLimit          uint64 = 450 * 1000 * 1000
 	InitialGasLimit      uint64 = 10 * 1000 * 1000 // InitialGasLimit gas limit value int genesis block.
 	GasLimitBoundDivisor uint64 = 1024             // from ethereum
 	GetBalanceGas        uint64 = 400              //EIP158 gas table
